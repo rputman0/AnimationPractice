@@ -19,15 +19,18 @@ while True:
         if event.type == pygame.QUIT:
             sys.exit()
 
-    txtScreen = myfont.render(text,1,BLACK)
-    text = text[len(text) - 1]+ text[0:len(text) - 1]
+    screen.fill(BLACK)
+
+    text = text[len(text)-1]+ text[0:len(text)-1]
     txtRot = myfont.render(text,1,WHITE)
-    
-    screen.blit(txtScreen, (5,10))
     screen.blit(txtRot, (5,10))
     
     pygame.time.wait(600)
 
     #make rotating animation
-    #by putting the last character at the begging of the word
+    #by putting the last character at the begining of the word
+
         #rotate -> erotat -> terota ->
+
+pygame.exitonclose()
+
