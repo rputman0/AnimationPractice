@@ -2,14 +2,15 @@
 
 **RotationText.py <br />**
 This program rotates a string of text from left to right, 
-by putting the last character at the front and adding the rest to the string.
+by putting the last character at the front and adding the rest to the string. <br />
+
+![alt text](https://github.com/rputman0/AnimationPractice/blob/master/images/helloWorldRot.gif "RotationText.py")
 
 **Pentagon.py <br />**
 This program draws a circle at each mouse click from the user. <br />
-It then creates a polygon at the five locations given by the user.
+After five mouse clicks, it creates a polygon at the five locations given by the user. <br />
 
-For five inputs, the program draws a circle f
-Given five inputs from the user's mouse click, this program creates a polygon.
+![alt text](https://github.com/rputman0/AnimationPractice/blob/master/images/pentagon.gif "Pentagon.py")
 
 **BouncingSquare.py <br />**
 This program creates a square in a random position, and moves it within the screen.  <br />
