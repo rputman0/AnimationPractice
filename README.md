@@ -1,5 +1,8 @@
 # AnimationPractice
 
+**Pentagon.py <br/>**
+Given give five inputs from the user's mouse click, this program create  a polygon.
+
 **BouncingSquare.py <br />**
 This program creates a square in a random position, and moves it within the screen.  <br />
 The square changes into a random colour when it hits a wall, and changes direction. <br />
