@@ -1,6 +1,10 @@
 # AnimationPractice
 
-**Pentagon.py <br/>**
+**RotationText.py <br />**
+This program rotates a string of text from left to right, 
+by putting the last character at the front and adding the rest.
+
+**Pentagon.py <br />**
 Given give five inputs from the user's mouse click, this program create  a polygon.
 
 **BouncingSquare.py <br />**
