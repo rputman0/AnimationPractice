@@ -2,10 +2,14 @@
 
 **RotationText.py <br />**
 This program rotates a string of text from left to right, 
-by putting the last character at the front and adding the rest.
+by putting the last character at the front and adding the rest to the string.
 
 **Pentagon.py <br />**
-Given give five inputs from the user's mouse click, this program create  a polygon.
+This program draws a circle at each mouse click from the user. <br />
+It then creates a polygon at the five locations given by the user.
+
+For five inputs, the program draws a circle f
+Given five inputs from the user's mouse click, this program creates a polygon.
 
 **BouncingSquare.py <br />**
 This program creates a square in a random position, and moves it within the screen.  <br />
