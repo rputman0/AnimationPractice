@@ -4,26 +4,21 @@ from random import *
 
 pygame.init()
 
-#set up the window
-width,height = 420,420#randint(100,900),randint(100,900); #create random screen size
+width,height = 200,200
 screen = pygame.display.set_mode((width, height), 0, 32)
-pygame.display.set_caption('Draw Concentric Squares')
+pygame.display.set_caption('Neon')
 
-#set color constants
 black = [0,0,0]
-red = [255,0,0]
 blue = [0,0,255]
 lightBlue = [65,105,255]
-green = [0,255,0]
-pink = [255,0,255]
 
 #draw the squares in the middle of the screen
 (widthCenter,heightCenter) = (width/2,height/2)
 
-TOPLEFT = [widthCenter-50,heightCenter-50] #blue
-TOPRIGHT =  [widthCenter+50,heightCenter-50] #red
-BOTLEFT =  [widthCenter-50,heightCenter+50] #pink
-BOTRIGHT = [widthCenter+50,heightCenter+50] #green
+TOPLEFT = [widthCenter-50,heightCenter-50]
+TOPRIGHT =  [widthCenter+50,heightCenter-50]
+BOTLEFT =  [widthCenter-50,heightCenter+50]
+BOTRIGHT = [widthCenter+50,heightCenter+50]
 
 def point(x,y):
     return (x,y)
@@ -45,20 +40,6 @@ def drawBigBox(length):
         drawRect(blue, (TOPRIGHT[0]-(i*length),TOPRIGHT[1])  )
         drawRect(blue, (BOTRIGHT[0],BOTRIGHT[1]- (i*length) ) )
         drawRect(blue, (BOTLEFT[0]+(i*length),BOTLEFT[1]) )
-        #time.sleep(0.01)
-        #pygame.display.update()#display each update to animate
-
-
-##def animate(length,argument):
-##    for i in range(0,100):
-##        drawRect(lightBlue,argument)
-##        time.sleep(0.01)
-##        pygame.display.update()
-##
-##        drawRect(blue,argument)
-##        time.sleep(0.01)
-##        pygame.display.update()
-
 
 def animate(length):
     for i in range(0,100):
@@ -97,7 +78,6 @@ def animate(length):
         time.sleep(0.04)
         pygame.display.update()
 
-
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -105,22 +85,10 @@ while True:
             sys.exit()
 
     screen.fill(black)
-    #drawDefault()
-    #pygame.display.update()
 
     drawBigBox(length)
     pygame.display.update()
 
-    #TODO: add font
     animate(length)
-##    animate(length,(TOPLEFT[0],TOPLEFT[1]+(i*length)))
-##    animate(length,(BOTLEFT[0]+(i*length),BOTLEFT[1]))
-##    animate(length,(BOTRIGHT[0],BOTRIGHT[1]-(i*length)))
-##    animate(length,(TOPRIGHT[0]-(i*length),TOPRIGHT[1]))
-##
 
-
-
-
-
-               
+pygame.exitonclose()
