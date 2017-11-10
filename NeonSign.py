@@ -12,7 +12,7 @@ black = [0,0,0]
 blue = [0,0,255]
 lightBlue = [65,105,255]
 
-#draw the squares in the middle of the screen
+#draw the big square, automatically in the center of the screen
 (widthCenter,heightCenter) = (width/2,height/2)
 
 TOPLEFT = [widthCenter-50,heightCenter-50]
